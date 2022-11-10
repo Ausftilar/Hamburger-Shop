@@ -30,8 +30,6 @@ const Burgers = ({ burgers }) => {
                 alt={`${burger.name}`}
                 width={150}
                 height={141}
-                // layout="responsive"
-                // objectFit="cover"
               />
             </div>
             <div>

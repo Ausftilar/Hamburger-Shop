@@ -5,9 +5,11 @@ import  { SiBurgerking } from 'react-icons/si';
 const Header = () => {
   return (
     <header>
-      <div>
-        <SiBurgerking />
-      </div>
+      <Link href="/">
+        <div>
+          <SiBurgerking />
+        </div>
+      </Link>
       <nav>
         <Link href="/">Домой</Link>
         <Link href="/about">О нас</Link>
