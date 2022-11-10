@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import  { SiBurgerking } from 'react-icons/si';
 
 const Header = () => {
@@ -7,10 +9,10 @@ const Header = () => {
         <SiBurgerking />
       </div>
       <nav>
-        <a href="#">Домой</a>
-        <a href="#">О нас</a>
-        <a href="#">Отзывы</a>
-        <a href="#">Бургеры</a>
+        <Link href="/">Домой</Link>
+        <Link href="/about">О нас</Link>
+        <Link href="/review">Отзывы</Link>
+        <Link href="/burgers">Бургеры</Link>
       </nav>
     </header>
 )
