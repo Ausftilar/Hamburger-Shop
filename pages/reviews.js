@@ -14,7 +14,9 @@ const ReviewsPage = ({ reviews }) => {
           return (
             <div key={res.id} className="review">
               {res.id}{' '}
-              {`${res.body.slice(0, 90)}...`}
+              {res.body.length > 90
+                ? `${res.body.slice(0, 90)}...`
+                : res.body}
             </div>
           )
         })}
